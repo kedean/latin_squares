@@ -38,15 +38,14 @@ if __name__ == "__main__":
         squares = createSquares(args.dim)
     except:
         print("An error occured, make sure you did not use a dimension less than 4.")
-        exit()
-
-    if args.pprint:
-        import pprint
-        pprint.pprint(squares)
     else:
-        rowsep = "".join("---" * len(squares[0][0]))
-        for rows in squares:
+        if args.pprint:
+            import pprint
+            pprint.pprint(squares)
+        else:
+            rowsep = "".join("---" * len(squares[0][0]))
+            for rows in squares:
+                print(rowsep)
+                for row in rows:
+                    print(" " + ", ".join(map(str, row)))
             print(rowsep)
-            for row in rows:
-                print(" " + ", ".join(map(str, row)))
-        print(rowsep)
