@@ -1,4 +1,5 @@
-latin_squares
+Latin Squares Generator
+=============
 Copyright 2013 Kevin Dean
 =============
 
