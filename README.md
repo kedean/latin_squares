@@ -10,4 +10,6 @@ Latin squares are NxN grids of n distinct symbols. The squares produced here are
 
 Note that latin squares of dimension < 4 are considered invalid, as not enough permutations of 3 exist to fill the cube fully.
 
+Also note that an optimization could be to not use the entire set of permutations produced by itertools, but this would significantly reduce the entropy of the squares, as you do not get a chance to shuffle the results.
+
 Feel free to use these functions in any project, no credit required.
