@@ -1,7 +1,6 @@
 Latin Squares Generator
 =============
-Copyright 2013 Kevin Dean
-=============
+&copy;2013 Kevin Dean
 
 Small set of functions to create latin squares.
 
