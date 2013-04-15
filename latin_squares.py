@@ -1,6 +1,12 @@
 from random import shuffle
 from itertools import permutations
 
+"""
+squares is a dim by dim nested list
+dim is the constant dimension in all three directions
+
+The output is whether or not squares is a valid latin cube.
+"""
 def verifySquares(squares, dim):
     seen = []
     for rows in squares:
@@ -13,6 +19,12 @@ def verifySquares(squares, dim):
                 seen.append(row)
     return True
 
+"""
+dim is the dimension of the output squares, as well as the upper bound of the values
+auto_verify determines if the function will verify the squares after production, if not then a ValueError is raised.
+
+The output is a latin cube of completely unique squares.
+"""
 def createSquares(dim, auto_verify=True):
     #construct the rows to extract from
     rows = [r for r in permutations(range(0, dim))]
