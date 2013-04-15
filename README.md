@@ -12,4 +12,4 @@ Note that latin squares of dimension < 4 are considered invalid, as not enough p
 
 Also note that an optimization could be to not use the entire set of permutations produced by itertools, but this would significantly reduce the entropy of the squares, as you do not get a chance to shuffle the results.
 
-Feel free to use these functions in any project, no credit required.
+Feel free to use and modify these functions in any project, no credit required.
